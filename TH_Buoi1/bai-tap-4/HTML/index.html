@@ -4,70 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 </head>
 <body>
     <div class="container">
-        <div class="basicInfo">
-            <h4>Basic Info</h4>
-            <div id="employee-id-field">
-                <label for="employee-id">Employee ID</label>
-                <input type="number" id="employee-id">
+       <div class="inline-container">
+            <div class="basicInfo">
+                <h4>Basic Info</h4>
+
+                <div class="form-row">
+                    <label for="employee-id">Employee ID</label>
+                    <input type="number" id="employee-id">
+                </div>
+
+                <div class="form-row">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName">
+                </div>
+
+                <div class="form-row">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName">
+                </div>
+
+                <div class="form-row-gender">
+                    <span>Gender</span>
+                    <div class="gender-option">
+                        <label><input type="radio" name="gender" value="male"> Male</label><br>
+                        <label><input type="radio" name="gender" value="female"> Female</label><br>
+                        <label><input type="radio" name="gender" value="xxx"> XXX</label><br>
+                        <label><input type="radio" name="gender" value="zzz"> ZZZ</label><br>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+
+                <div class="form-row">
+                    <label for="suffix">Suffix</label>
+                    <input type="text" id="suffix">
+                </div>
+
+                <div class="form-row">
+                    <label for="birthDate">BirthDate</label>
+                    <input type="datetime-local" id="birthDate">
+                </div>
+
+                <div class="form-row">
+                    <label for="hireDate">HireDate</label>
+                    <input type="datetime-local" id="hireDate">
+                </div>
+
+                <div class="form-row">
+                    <label for="ssn">SSN # (if applicable)</label>
+                    <input type="text" id="ssn">
+                </div>
+
+                <div class="form-row report-field">
+                    <label for="report">Reports To</label>
+                    <select id="report">
+                        <option value="giang">Giang</option>
+                        <option value="lam">Lam</option>
+                        <option value="duc">Duc</option>
+                    </select>
+                </div>
             </div>
-            <div id="lastName-field">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName">
+
+            <div class="contactInfo">
+                <h4>Contact Info</h4>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                </div>
+
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+
+                <div class="form-row">
+                    <label for="region">Region</label>
+                    <input type="text" id="region">
+                </div>
+
+                <div class="form-row">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" id="postalCode">
+                </div>
+
+                <div class="form-row country-field">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="VN">Viet Nam</option>
+                        <option value="TQ">Trung Quoc</option>
+                        <option value="JP">Japan</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="usPhone">US Home Phone</label>
+                    <input type="tel" id="usPhone">
+                </div>
+
+                <div class="form-row">
+                    <label for="photo">Photo</label>
+                    <input type="file" accept=".bmp,.png" id="photo">
+                </div>
             </div>
-            <div id="firstName-field">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName">
+
+            <div class="optionInfo">
+                <h4>Optional Info</h4>
+                <div class="form-row">
+                    <label for="note">Notes</label>
+                    <textarea id="note" rows="5" cols="40"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="preferred">Preferred Shift</label>
+                    <div class="checkBox">
+                        <label><input type="checkbox" id="preferred"> Regular</label>
+                        <label><input type="checkbox" id="preferred"> Gravy Yard</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="active">Active?</label>
+                    <label><input type="checkbox" id="active"></label>
+                </div>
+
+                <div class="form-row">
+                    <label for="human">Are you human?</label>
+                    <div>
+                        <p>Click to change</p>
+                        <input type="text" id="human">
+                    </div>
+                </div>
             </div>
-            <div id="gender-field">
-                <label for="gender">Gender</label>
-                <input type="radio"> Male
-                <input type="radio"> Female
-                <input type="radio"> XXX
-                <input type="radio"> ZZZ
+
+            <div class="footer">
+                <div class="left-footer">
+                    <button>comeBack</button>
+                    <button>foreward</button>
+                    <p>*required</p>
+                </div>
+                <div class="right-footer">
+                    <button>Submit</button>
+                    <button>Cancel</button>
+                </div>
+                
             </div>
-            <div id="title-field">
-                <label for="title">Title</label>
-                <input type="text" id="title">
-            </div>
-            <div id="suffix-field">
-                <label for="suffix">Title</label>
-                <input type="text" id="suffix">
-            </div>
-            <div id="birthDate-field">
-                <label for="birthDate">BirthDate</label>
-                <input type="datetime-local" id="birthDate">
-            </div>
-            <div id="hireDate-field">
-                <label for="hireDate">HireDate</label>
-                <input type="datetime-local" id="hireDate">
-            </div>
-            <div id="ssn#-field">
-                <label for="ssn#">SSN # (if applicable)</label>
-                <input type="text" id="ssn#">
-            </div>
-            <div id="report-field">
-                <label for="report">Reports To</label>
-                <select name="report" id="report">
-                    <option value="giang">giang</option>
-                    <option value="lam">Lam</option>
-                    <option value="duc">Duc</option>
-                </select>
-            </div>
-        </div>
-        <div class="contactInfo">
-            <h4>Contact Info</h4>
-            <div id="email-field">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="name@example.com">
-            </div>
-            <div id="address-field">
-                <label for="address">Address</label>
-                <input type="text" id="address">
-            </div>
-        </div>
+       </div>
     </div>
 </body>
 </html>
