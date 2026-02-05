@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.head-left{
+    display: flex;
+    gap: 20px;
+}
+
+.logo{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.menu{
+    padding: 10px;
+}
+
+.menu a {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.756);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.head-right{
+    display: flex;
+    gap: 10px;
+}
+
+.head-right input {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.head-right button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: #2c2c2c;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.employee-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.employee-header button{
+    background-color: rgb(27, 128, 236);
+    margin: 7px;
+    padding: 0px 23px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.employee-table{
+    display: flex;
+    justify-content: center;
+}
+
+.employee-table table{
+    border: 1px solid black;
+    width: 800px;
+}
+
+.employee-table table {
+    width: 85%;
+    border-collapse: collapse;
+}
+
+.employee-table thead th,
+.employee-table tbody td {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.employee-table tbody td{
+    text-align: center;
+}
+
+
+.action-edit{
+    background-color: yellow;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.action-delete{
+    background-color: red;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

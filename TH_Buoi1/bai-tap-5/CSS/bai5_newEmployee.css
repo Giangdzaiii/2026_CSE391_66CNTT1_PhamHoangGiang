@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.inline_container{
+    width: 600px;
+    border: 1px solid black;
+}
+
+.header{
+    background-color: rgb(75, 133, 208);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    font-weight: 20px;
+    font-weight: bold;
+    padding: 13px;
+}
+
+.header-right{
+    background-color: rgb(75, 133, 208);
+    border: 0;
+    margin-right: 5px;
+}
+
+.body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.body div{
+    width: 280px;
+}
+
+.name,.phone{
+    margin-left: 10px;
+}
+
+.body input{
+    padding: 7px 45px;
+    border-radius: 5px;
+}
+
+
+.position select,.position option{
+    padding: 7px 95px;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end
+}
+
+.footer button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.footer-save{
+    background-color: green;
+}
+
+.footer-cancel{
+    background-color: gray;
+}
+
+
