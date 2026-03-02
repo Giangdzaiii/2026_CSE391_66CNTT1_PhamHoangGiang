@@ -1,0 +1,130 @@
+.sidebar{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    z-index: 10;
+}
+
+.logo{
+    color: rgba(255, 255, 0, 0.786);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(240, 174, 7);
+}
+
+.header{
+    background: url('../Picture/ocean.jpg') no-repeat center center/cover;
+}
+
+.object1 {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.object1-content {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.object1-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.object1-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.object1-content button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.object2-content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.object2{
+    text-align: center;
+    background: rgba(177, 208, 208, 0.373);
+}
+
+.destination {
+    width: 430px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.destination img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination span{
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.destination p{
+    display: inline-block;
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #000;
+}
+div.icon{
+    margin: 15px 0 15px 0;
+    padding: 0;
+}
+
+.icon{
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+}
+footer i {
+    color: white;
+    font-size: 28px;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+

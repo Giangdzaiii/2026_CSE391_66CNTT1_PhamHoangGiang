@@ -78,3 +78,63 @@ a:hover{
 .btn:hover{
     background: #0056b3;
 }
+
+/* Cải tiến nav bằng Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+}
+
+/* Cải tiến .posts bằng Flexbox */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center (hoặc space-between);
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+/* Responsive: Khi màn hình < 768px, card chiếm full width */
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)  ← 3 cột bằng nhau;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 2rem;
+    border-radius: 8px;
+
+}
+
+/* Responsive: Tự động giảm cột khi màn hình nhỏ */
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
