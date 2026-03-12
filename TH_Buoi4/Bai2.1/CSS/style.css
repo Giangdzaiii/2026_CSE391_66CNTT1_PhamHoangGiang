@@ -1,0 +1,105 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.form_container{
+    width:450px;
+    margin:50px auto;
+    padding:20px 30px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.form_group{
+    display:flex;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.form_group label{
+    width:150px;
+    font-weight:500;
+}
+
+.form_group input[type="text"],
+.form_group input[type="email"],
+.form_group input[type="password"]{
+    flex:1;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+.radio_group{
+    display:flex;
+    gap:10px;
+}
+
+.radio_group label{
+    width:auto;
+}
+
+button{
+    padding:8px 20px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.form_group label:has(input[type="checkbox"]){
+    width:200px;
+}
+
+
+span{
+    margin-left:6px;
+    color:red;
+}
+
+.input_box{
+    position:relative;
+    display:flex;
+    align-items:center;
+    flex:1;
+}
+
+#togglePassword{
+    position:absolute;
+    right:8px;
+    cursor:pointer;
+}
+
+#nameCount{
+    position:absolute;
+    right:0;
+    bottom:-18px;
+    font-size:12px;
+    color:#666;
+}
+
+
+.password_wrapper{
+    flex:1;
+}
+
+.strength{
+    width:100%;
+    height:6px;
+    background:#ddd;
+    border-radius:4px;
+    margin-top:6px;
+}
+
+#strengthBar{
+    height:100%;
+    width:0%;
+    border-radius:4px;
+}

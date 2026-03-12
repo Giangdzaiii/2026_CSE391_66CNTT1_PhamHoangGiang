@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <form action="" class="form">
+        <div class="input_name">
+            <label for="name">Họ tên</label>
+            <input type="text" id="name" placeholder="Mời nhập tên:">
+        </div>
+        <div class="input_score">
+            <label for="score">Điểm</label>
+            <input type="number" id="score" placeholder="Mời nhập điểm:">
+        </div>
+        <button class="btn_add">Thêm</button>
+    </form>
+    <div class="condition_container">
+        <div class="search">
+            <label for="search_name">Mời nhập tên cần tìm:</label>
+            <input type="text" id="search_name" placeholder="Điền tên sinh viên cần tìm:">
+        </div>
+        <div class="rank">
+            <select name="rank" id="rank_score">
+                <option value="all">Tất cả</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th id="sort_score">Điểm</th>
+                <th>Xếp loại</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+        <tr id="stat">
+            <td colspan="2">Tổng số sinh viên: 0</td>
+            <td colspan="3">Điểm TB: 0</td>
+        </tr>
+    </table>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

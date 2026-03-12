@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.form_container{
+    width:450px;
+    height: 400px;
+    margin:50px auto;
+    padding:20px 30px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.form_group{
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+    height: 30px;
+}
+
+.form_group label{
+    width: 150px;
+}
+
+.form_group select,.form_group input[type="number"],
+.form_group input[type="date"],.form_group input[type="text"],
+.form_group select{
+    width: 250px;
+    height: 35px;
+}
+
+
+form button{
+    width: 150px;
+    height: 40px;
+    background: rgb(226, 3, 3);
+    color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+span{
+
+    margin-left: 8px;
+}
+
+
+.form_group textarea{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 60px;
+    width: 250px;
+}
+
+.newForm{
+    margin-top:20px;
+    padding:20px;
+    border:1.5dvh solid #7177c9;
+    border-radius:6px;
+    background:#ffffff;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.newForm h3{
+    margin-bottom:10px;
+}
+
+.newForm div{
+    font-size:16px;
+}
+
+.newBtn{
+    display: flex;
+    flex-direction: row;
+}
+
+.newBtn button{
+    margin-left: 15px;
+    height: 38px;
+    width: 70px;
+}
+
+.confirm {
+    background: rgb(77, 229, 77);
+}
+.cancel{
+    background: red;
+}

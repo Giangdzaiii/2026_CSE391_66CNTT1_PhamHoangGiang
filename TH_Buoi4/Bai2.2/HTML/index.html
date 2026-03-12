@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="form_container">
+        <form action="#" id="registerForm">
+            <div class="form_group">
+                <label for="productName">Tên sản phẩm</label>
+                <select name="productName" id="productName">
+                    <option value="default">Chọn sản phẩm</option>
+                    <option value="smartPhone">Smart Phone</option>
+                    <option value="ipad">Ipad</option>
+                    <option value="computer">Computer</option>
+                </select>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form_group">
+                <label for="productQuantity">Số lượng sản phẩm</label>
+                <input type="number" name="productQuantity" id="productQuantity">
+                <span class="error" id="quantityError"></span>
+            </div>
+            <div class="form_group">
+                <label for="date">Ngày giao hàng</label>
+                <input type="date" name="date" id="date" placeholder="Mời nhập ngày giao hàng">
+                <span class="error" id="dateError"></span>
+            </div>
+            <div class="form_group">
+                <label for="locationAddress">Địa chỉ giao hàng</label>
+                <input type="text" name="locationAddress" id="locationAddress" placeholder="Mời nhập địa chỉ giao hàng">
+                <span class="error" id="locationAddressError"></span>
+            </div>
+            <div class="form_group">
+                <label for="note"> Ghi chú</label>
+                <textarea name="note" id="note"></textarea>
+                <div>
+                    <span id="charCount">0</span>/200
+                </div>
+                <span class="error" id="noteError"></span>
+            </div>
+            <div class="form_group">
+                <label for="#">Payment Method</label>
+                <div class="radio_group">
+                    <label>
+                        <input type="radio" name="method" value="COD"> COD
+                    </label>
+                    <label>
+                        <input type="radio" name="method" value="transfer"> Transfer
+                    </label>
+                    <label>
+                        <input type="radio" name="method" value="e-wallet"> E-Wallet
+                    </label>
+                </div>
+                <span class="error" id="methodError"></span>
+            </div>
+            <button type="submit" id="submit">Đăng ký</button>
+        </form>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
